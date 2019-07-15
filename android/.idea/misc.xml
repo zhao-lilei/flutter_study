@@ -9,6 +9,9 @@
     <option name="sourceMapEmbedSources" />
     <option name="sourceMapPrefix" />
   </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="zhaolilei" />
+  </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -37,8 +40,10 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
   <component name="ProjectType">
-    <option name="id" value="io.flutter" />
+    <option name="id" value="Android" />
   </component>
 </project>
