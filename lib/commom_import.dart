@@ -16,10 +16,14 @@ export 'app.dart';
 export 'splash_screen.dart';
 export 'loading_page.dart';
 
-//ui
+// ui/base
+export 'package:flutter_study/base/_base_widget.dart';
 
-//home
+// ui/home
 export 'package:flutter_study/ui/home/home_page.dart';
+
+// ui/knowledge
+export 'package:flutter_study/ui/knowledge/knowledge_page.dart';
 
 //util
 export 'util/theme_util.dart';
