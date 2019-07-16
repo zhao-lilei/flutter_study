@@ -1,14 +1,13 @@
 package io.flutter.plugins;
 
-import com.dfa.introslider.IntroSliderPlugin;
-import com.flutter_webview_plugin.FlutterWebviewPlugin;
-import com.tekartik.sqflite.SqflitePlugin;
-
 import io.flutter.plugin.common.PluginRegistry;
+import com.flutter_webview_plugin.FlutterWebviewPlugin;
+import io.github.ponnamkarthik.toast.fluttertoast.FluttertoastPlugin;
+import com.dfa.introslider.IntroSliderPlugin;
 import io.flutter.plugins.pathprovider.PathProviderPlugin;
 import io.flutter.plugins.share.SharePlugin;
 import io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin;
-import io.github.ponnamkarthik.toast.fluttertoast.FluttertoastPlugin;
+import com.tekartik.sqflite.SqflitePlugin;
 
 /**
  * Generated file. Do not edit.

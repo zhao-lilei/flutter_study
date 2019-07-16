@@ -9,7 +9,7 @@ export 'package:flutter_slidable/flutter_slidable.dart';
 export 'package:common_utils/common_utils.dart';
 export 'package:event_bus/event_bus.dart';
 export 'package:share/share.dart';
-export 'package:photo_view/photo_view.dart';
+//export 'package:photo_view/photo_view.dart';
 export 'package:flutter/services.dart';
 export 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 
