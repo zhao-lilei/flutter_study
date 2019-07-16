@@ -25,5 +25,14 @@ export 'package:flutter_study/ui/home/home_page.dart';
 // ui/knowledge
 export 'package:flutter_study/ui/knowledge/knowledge_page.dart';
 
+// ui/navigation
+export 'package:flutter_study/ui/navigation/navigation_page.dart';
+
+// ui/project
+export 'package:flutter_study/ui/project/project_page.dart';
+
+// ui/public
+export 'package:flutter_study/ui/public/public_page.dart';
+
 //util
 export 'util/theme_util.dart';
