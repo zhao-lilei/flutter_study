@@ -11,6 +11,7 @@ export 'package:event_bus/event_bus.dart';
 export 'package:share/share.dart';
 export 'package:photo_view/photo_view.dart';
 export 'package:flutter/services.dart';
+export 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 
 export 'app.dart';
 export 'splash_screen.dart';
@@ -25,8 +26,12 @@ export 'package:flutter_study/common/user.dart';
 // ui/draw
 export 'package:flutter_study/ui/draw/draw_page.dart';
 
+// ui/common_ui
+export 'package:flutter_study/ui/common_ui/web_view_page.dart';
+
 // ui/home
 export 'package:flutter_study/ui/home/home_page.dart';
+export 'package:flutter_study/ui/home/home_banner.dart';
 
 // ui/knowledge
 export 'package:flutter_study/ui/knowledge/knowledge_page.dart';
@@ -45,7 +50,6 @@ export 'package:flutter_study/ui/search/search_page.dart';
 
 //util
 export 'util/theme_util.dart';
-
 
 //http
 export 'package:flutter_study/http/api.dart';

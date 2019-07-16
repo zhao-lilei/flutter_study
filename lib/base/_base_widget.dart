@@ -13,7 +13,7 @@ abstract class BaseWidget extends StatefulWidget {
   BaseWidgetState getState();
 }
 
-abstract class BaseWidgetState extends State<BaseWidget> {
+abstract class BaseWidgetState<T extends BaseWidget> extends State<T> {
   //对一些控件显示进行初始化管理
   bool _isShowAppBar = true; //导航栏是否需要显示
 
