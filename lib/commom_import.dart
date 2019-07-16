@@ -19,6 +19,9 @@ export 'loading_page.dart';
 // ui/base
 export 'package:flutter_study/base/_base_widget.dart';
 
+//common
+export 'package:flutter_study/common/user.dart';
+
 // ui/draw
 export 'package:flutter_study/ui/draw/draw_page.dart';
 
@@ -42,3 +45,30 @@ export 'package:flutter_study/ui/search/search_page.dart';
 
 //util
 export 'util/theme_util.dart';
+
+
+//http
+export 'package:flutter_study/http/api.dart';
+export 'package:flutter_study/http/api_service.dart';
+export 'package:flutter_study/http/dio_manager.dart';
+
+//model
+export 'package:flutter_study/model/article_model.dart';
+export 'package:flutter_study/model/banner_model.dart';
+export 'package:flutter_study/model/base_model.dart';
+export 'package:flutter_study/model/collection_model.dart';
+export 'package:flutter_study/model/common_websit_model.dart';
+export 'package:flutter_study/model/common_website_model.dart';
+export 'package:flutter_study/model/hotword_result_model.dart';
+export 'package:flutter_study/model/navi_model.dart';
+export 'package:flutter_study/model/pretty_model.dart';
+export 'package:flutter_study/model/project_tree_model.dart';
+export 'package:flutter_study/model/projectlist_model.dart';
+export 'package:flutter_study/model/system_tree_content_model.dart';
+export 'package:flutter_study/model/system_tree_model.dart';
+export 'package:flutter_study/model/todo_item.dart';
+export 'package:flutter_study/model/todolist_model.dart';
+export 'package:flutter_study/model/user_model.dart';
+export 'package:flutter_study/model/website_collection_model.dart';
+export 'package:flutter_study/model/wx_article_content_model.dart';
+export 'package:flutter_study/model/wx_article_title_model.dart';
