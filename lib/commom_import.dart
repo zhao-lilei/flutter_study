@@ -19,6 +19,9 @@ export 'loading_page.dart';
 // ui/base
 export 'package:flutter_study/base/_base_widget.dart';
 
+// ui/draw
+export 'package:flutter_study/ui/draw/draw_page.dart';
+
 // ui/home
 export 'package:flutter_study/ui/home/home_page.dart';
 
@@ -33,6 +36,9 @@ export 'package:flutter_study/ui/project/project_page.dart';
 
 // ui/public
 export 'package:flutter_study/ui/public/public_page.dart';
+
+// ui/search
+export 'package:flutter_study/ui/search/search_page.dart';
 
 //util
 export 'util/theme_util.dart';
