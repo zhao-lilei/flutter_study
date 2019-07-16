@@ -8,6 +8,7 @@ class LoadingPage extends StatefulWidget {
 }
 
 class LoadingPageState extends State<LoadingPage> {
+
   @override
   void initState() {
     super.initState();
@@ -25,7 +26,7 @@ class LoadingPageState extends State<LoadingPage> {
     } else {
       Navigator.of(context).pushAndRemoveUntil(
           new MaterialPageRoute(builder: (context) => App()),
-          (route) => route = null);
+          (route) => route == null);
     }
   }
 
@@ -35,7 +36,7 @@ class LoadingPageState extends State<LoadingPage> {
       child: Stack(
         children: <Widget>[
           Image.asset(
-            "image/loading",
+            "images/loading.png",
             fit: BoxFit.fill,
           )
         ],

@@ -49,6 +49,7 @@ class HomePageState extends BaseWidgetState<HomePage> {
     return Scaffold(
       body: RefreshIndicator(
         onRefresh: _getData,
+        displacement: 15,
         child: ListView.separated(
           itemBuilder: _renderRow,
           separatorBuilder: (BuildContext context, int index) {
@@ -61,7 +62,6 @@ class HomePageState extends BaseWidgetState<HomePage> {
           controller: _scrollController,
           physics: new AlwaysScrollableScrollPhysics(),
         ),
-        displacement: 15,
       ),
       floatingActionButton: !isShowTopBtn
           ? null
@@ -142,7 +142,8 @@ class HomePageState extends BaseWidgetState<HomePage> {
         color: Colors.green,
         child: new HomeBannerWidget(),
       );
-    } else if (index < _articleList.length - 1) {
+    }
+    if (index < _articleList.length - 1) {
       return new InkWell(
         onTap: () {
           Navigator.of(context).push(new MaterialPageRoute(builder: (context) {
