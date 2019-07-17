@@ -91,18 +91,14 @@ class HomePageState extends BaseWidgetState<HomePage> {
             _articleList.addAll(_articleModel.data.datas);
           });
         } else {
-          setState(() {
-            showEmpty();
-          });
+          showEmpty();
         }
       } else {
         Fluttertoast.showToast(
             msg: _articleModel.errorMsg, gravity: ToastGravity.CENTER);
       }
     }, (DioError erroe) {
-      setState(() {
-        showError();
-      });
+      showError();
     }, _page);
   }
 
