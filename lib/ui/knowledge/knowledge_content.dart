@@ -1,7 +1,6 @@
 import 'package:flutter_study/commom_import.dart';
 
 class KnowledgeContent extends StatefulWidget {
-
   SystemTreeData _treeData;
 
   KnowledgeContent(ValueKey<SystemTreeData> key) : super(key: key) {
@@ -14,7 +13,8 @@ class KnowledgeContent extends StatefulWidget {
   }
 }
 
-class KnowledgeContentState extends State<KnowledgeContent> {
+class KnowledgeContentState extends State<KnowledgeContent>
+    with TickerProviderStateMixin {
   SystemTreeData _datas;
   TabController _tabController;
 
@@ -26,12 +26,18 @@ class KnowledgeContentState extends State<KnowledgeContent> {
 
   @override
   Widget build(BuildContext context) {
-    _tabController = TabController(length: _datas.children.length, vsync: null);
+    _tabController =
+        new TabController(length: _datas.children.length, vsync: this);
     return Scaffold(
       appBar: new AppBar(
         title: new Text(_datas.name),
         bottom: new TabBar(
-            tabs: _datas.children.map((item) {
+            controller: _tabController,
+            indicatorColor: Colors.white,
+            labelStyle: TextStyle(fontSize: 16),
+            unselectedLabelStyle: TextStyle(fontSize: 16),
+            isScrollable: true,
+            tabs: _datas.children.map((SystemTreeChild item) {
               return Tab(
                 text: item.name,
               );

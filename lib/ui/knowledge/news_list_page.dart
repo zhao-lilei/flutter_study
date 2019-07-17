@@ -46,9 +46,16 @@ class NewsListPageState extends BaseWidgetState<NewsListPage> {
         child: ListView.separated(
           itemBuilder: _renderRow,
           separatorBuilder: (BuildContext context, int index) {
-            return Container(
+//            return Container(
+//              height: 0.5,
+//              color: Colors.black26,
+//              padding: EdgeInsets.fromLTRB(16, 0, 16, 0),
+//            );
+            return new Divider(
               height: 0.5,
               color: Colors.black26,
+              indent: 15,
+              endIndent: 15,
             );
           },
           itemCount: _newListdatas.length,
@@ -92,11 +99,10 @@ class NewsListPageState extends BaseWidgetState<NewsListPage> {
         if (model.data.datas.length > 0) {
           showContent();
           setState(() {
-            _newListdatas.clear();
             _newListdatas.addAll(model.data.datas);
           });
         } else {
-          showEmpty();
+          Fluttertoast.showToast(msg: "没有更多数据了哦～");
         }
       } else {
         Fluttertoast.showToast(msg: model.errorMsg);
@@ -127,11 +133,10 @@ class NewsListPageState extends BaseWidgetState<NewsListPage> {
   Widget _newsRow(SystemTreeContentChild child) {
     return Container(
       color: Colors.white,
-      padding: EdgeInsets.all(16),
+      padding: EdgeInsets.all(15),
       child: Column(
         children: <Widget>[
           Container(
-            padding: EdgeInsets.all(8),
             child: Row(
               children: <Widget>[
                 Text(
@@ -150,7 +155,7 @@ class NewsListPageState extends BaseWidgetState<NewsListPage> {
             ),
           ),
           Container(
-            padding: EdgeInsets.fromLTRB(8, 0, 8, 8),
+            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
             child: Row(
               children: <Widget>[
                 Expanded(
@@ -166,7 +171,7 @@ class NewsListPageState extends BaseWidgetState<NewsListPage> {
             ),
           ),
           Container(
-            padding: EdgeInsets.fromLTRB(8, 0, 8, 8),
+            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
             child: Row(
               children: <Widget>[
                 Text(
