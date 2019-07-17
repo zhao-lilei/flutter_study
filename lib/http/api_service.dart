@@ -15,7 +15,7 @@ class ApiService {
     DioManager.singleton.dio
         .get(Api.HOME_ARTICLE_LIST + "$_page/json", options: _getOptions())
         .then((response) {
-      (ArticleModel(response.data));
+      callback((ArticleModel(response.data)));
     }).catchError((e) {
       errorback(e);
     });
