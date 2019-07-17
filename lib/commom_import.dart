@@ -38,6 +38,7 @@ export 'package:flutter_study/ui/home/home_banner.dart';
 // ui/knowledge
 export 'package:flutter_study/ui/knowledge/knowledge_page.dart';
 export 'package:flutter_study/ui/knowledge/knowledge_content.dart';
+export 'package:flutter_study/ui/knowledge/news_list_page.dart';
 
 // ui/navigation
 export 'package:flutter_study/ui/navigation/navigation_page.dart';
